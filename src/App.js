@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/home/Home';
 
 function App() {
   return (
     <div className="App">
-     <button className='btn btn-primary'>Btn</button>
+      <Home />
     </div>
   );
 }
