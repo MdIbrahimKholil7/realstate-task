@@ -13,17 +13,19 @@ const PropertyDetailsCard = ({ element }) => {
                 </figure>
                 <div class="card-body">
                     <div>
-                        <h2 class="card-title"><span className='text-[#7b5cf8]'>${price}</span>/month</h2>
-                        <p>{propertyName}</p>
-                        <p>{address}</p>
+                        <h2 class="card-title"><span className='text-[#7b5cf8]'>${price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>/month</h2>
+                        <p className='text-2xl py-2 font-bold'>{propertyName}</p>
+                        <p className='text-[17px] text-[#9a9696]'>{address}</p>
                     </div>
                     <div className="divider"></div>
                     <div class="card-actions gap-1 justify-between ">
                         <div className=''>
                             <p className='flex items-center text-[17px]'>
-                                <MdBed
-                                    className='text-[#a09ff0]'
-                                />
+                                <strong>
+                                    <MdBed
+                                        className='text-[#a09ff0] '
+                                    />
+                                </strong>
                                 <span className='ml-2'>
                                     {beds} beds
                                 </span>
@@ -31,8 +33,8 @@ const PropertyDetailsCard = ({ element }) => {
                         </div>
                         <div>
                             <p className='flex items-center text-[17px]'>
-                                <TbBath 
-                                className='text-[#a09ff0]'
+                                <TbBath
+                                    className='text-[#a09ff0]'
                                 />
                                 <span className='ml-2'>
                                     {bathrooms} Bathrooms
@@ -41,8 +43,8 @@ const PropertyDetailsCard = ({ element }) => {
                         </div>
                         <div>
                             <p className='flex items-center text-[17px]'>
-                                <BsSquare 
-                                className='text-[#a09ff0]'
+                                <BsSquare
+                                    className='text-[#a09ff0]'
                                 />
                                 <span className='ml-2'>
                                     {squareFeet}

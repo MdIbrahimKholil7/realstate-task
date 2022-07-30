@@ -34,7 +34,7 @@
     },
     {
         "propertyName":"Cascade Realty",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"900",
         "beds":"4",
         "bathrooms":"2",
@@ -67,7 +67,7 @@
     },
     {
         "propertyName":"Continental Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1231",
         "beds":"5",
         "bathrooms":"3",
@@ -89,7 +89,7 @@
     },
     {
         "propertyName":"Prestige Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1843",
         "beds":"4",
         "bathrooms":"3",
@@ -111,7 +111,7 @@
     },
     {
         "propertyName":"Elite Property",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1163",
         "beds":"3",
         "bathrooms":"2",
@@ -122,7 +122,7 @@
     },
     {
         "propertyName":"Mid America",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1342",
         "beds":"3",
         "bathrooms":"2",
@@ -144,7 +144,7 @@
     },
     {
         "propertyName":"Peachtree Star",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"834",
         "beds":"4",
         "bathrooms":"2",
@@ -155,7 +155,7 @@
     },
     {
         "propertyName":"Redefy Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1123",
         "beds":"4",
         "bathrooms":"3",
@@ -177,7 +177,7 @@
     },
     {
         "propertyName":"Hamilton House",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"530",
         "beds":"4",
         "bathrooms":"2",
@@ -199,7 +199,7 @@
     },
     {
         "propertyName":"Metroplex Realty",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"643",
         "beds":"4",
         "bathrooms":"3",
@@ -254,7 +254,7 @@
     },
     {
         "propertyName":"Grace Realty",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"3500",
         "beds":"5",
         "bathrooms":"3",
@@ -287,7 +287,7 @@
     },
     {
         "propertyName":"Heritage Properties",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1700",
         "beds":"4",
         "bathrooms":"3",
@@ -309,7 +309,7 @@
     },
     {
         "propertyName":"Cornerstone",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1100",
         "beds":"4",
         "bathrooms":"3",
@@ -320,7 +320,7 @@
     },
     {
         "propertyName":"Mountain Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"550",
         "beds":"3",
         "bathrooms":"2",
@@ -331,7 +331,7 @@
     },
     {
         "propertyName":"Archstone Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"700",
         "beds":"4",
         "bathrooms":"2",
@@ -364,7 +364,7 @@
     },
     {
         "propertyName":"Eco Home",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1700",
         "beds":"4",
         "bathrooms":"2",
@@ -386,7 +386,7 @@
     },
     {
         "propertyName":"Dream Town",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"3400",
         "beds":"5",
         "bathrooms":"3",
@@ -397,7 +397,7 @@
     },
     {
         "propertyName":"Avenue West",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"1500",
         "beds":"4",
         "bathrooms":"2",
@@ -408,7 +408,7 @@
     },
     {
         "propertyName":"Peachtree",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2100",
         "beds":"4",
         "bathrooms":"2",
@@ -419,7 +419,7 @@
     },
     {
         "propertyName":"Redefy",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2800",
         "beds":"5",
         "bathrooms":"2",
@@ -430,7 +430,7 @@
     },
     {
         "propertyName":"Sea to Sky",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"3700",
         "beds":"5",
         "bathrooms":"3",
@@ -441,7 +441,7 @@
     },
     {
         "propertyName":"Peachtree",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2700",
         "beds":"4",
         "bathrooms":"2",
@@ -452,7 +452,7 @@
     },
     {
         "propertyName":"Redefy",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2400",
         "beds":"5",
         "bathrooms":"2",
@@ -463,7 +463,7 @@
     },
     {
         "propertyName":"Sea to Sky",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"3700",
         "beds":"5",
         "bathrooms":"3",
@@ -474,7 +474,7 @@
     },
     {
         "propertyName":"Peachtree",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2700",
         "beds":"4",
         "bathrooms":"2",
@@ -485,7 +485,7 @@
     },
     {
         "propertyName":"Redefy",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2800",
         "beds":"5",
         "bathrooms":"2",
@@ -496,7 +496,7 @@
     },
     {
         "propertyName":"Sea to Sky",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"4100",
         "beds":"5",
         "bathrooms":"3",
@@ -507,7 +507,7 @@
     },
     {
         "propertyName":"Peachtree",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2100",
         "beds":"4",
         "bathrooms":"2",
@@ -518,7 +518,7 @@
     },
     {
         "propertyName":"Redefy",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2100",
         "beds":"5",
         "bathrooms":"2",
@@ -529,7 +529,7 @@
     },
     {
         "propertyName":"Sea to Sky",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2100",
         "beds":"5",
         "bathrooms":"3",
@@ -540,7 +540,7 @@
     },
     {
         "propertyName":"Peachtree",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2100",
         "beds":"4",
         "bathrooms":"2",
@@ -551,7 +551,7 @@
     },
     {
         "propertyName":"Redefy",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"2900",
         "beds":"5",
         "bathrooms":"2",
@@ -562,7 +562,7 @@
     },
     {
         "propertyName":"Sea to Sky",
-        "propertyType":"House",
+        "propertyType":"Houses",
         "price":"3700",
         "beds":"5",
         "bathrooms":"3",

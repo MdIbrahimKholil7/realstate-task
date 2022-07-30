@@ -1,11 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropertyDetails from './PropertyDetails';
+import PropertyDetailsCard from './PropertyDetailsCard';
 
 const Property = () => {
 
     const [destination, setDestination] = useState('')
     const [price, setPrice] = useState(0)
     const [property, setProperty] = useState('')
+    const [data, setData] = useState([])
+    const [filterData, setFilterData] = useState([])
+
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                setFilterData(data)
+                setData(data)
+            })
+
+    }, [])
+
+    const handleSearch = (property, price, destination) => {
+        const number = price.split('-')
+        console.log(property)
+        console.log(typeof Number(number[0]))
+        const filterResult = data.filter(element => {
+            return element.location.includes(destination) && element.price >= Number(number[0]) && element.price <= Number(number[1]) && element.propertyType.toLowerCase().includes(property.toLowerCase())
+
+        })
+
+       setFilterData(filterResult)
+    }
 
     const handleDestination = event => {
         setDestination(event.target.value)
@@ -16,8 +41,7 @@ const Property = () => {
     const handleProperty = event => {
         setProperty(event.target.value)
     }
-
-    console.log(destination,price,property)
+console.log(filterData)
 
     return (
         <div className='mt-10'>
@@ -61,17 +85,20 @@ const Property = () => {
                         </select>
                     </div>
                     <div className=' pl-7 pr-2'>
-                        <button className='btn btn-primary'>Search</button>
+                        <button onClick={() => handleSearch(property, price, destination)} className='btn btn-primary'>Search</button>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <PropertyDetails
-                    property={property}
-                    price={price}
-                    destination={destination}
-                />
+            <div className='mt-40'>
+                <div className='grid grid-cols-3 gap-9'>
+                    {
+                        filterData?.map((element, index) => <PropertyDetailsCard
+                            key={index}
+                            element={element}
+                        />)
+                    }
+                </div>
             </div>
 
         </div>
