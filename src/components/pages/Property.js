@@ -34,10 +34,10 @@ const Property = () => {
     const handleSearch = (property, price, destination) => {
 
         const number = price.split('-')
+        console.log(number[0].replace('$',''))
         // filter data by condition 
         const filterResult = data.filter(element => {
-            return element.location.includes(destination) && element.price >= Number(number[0]) && element.price <= Number(number[1]) && element.propertyType.toLowerCase().includes(property.toLowerCase())
-
+            return element.location.includes(destination) && (element.price >= Number(number[0].replace('$',''))) && (element.price <= Number(number[1].replace('$',''))) && (element.propertyType.toLowerCase().includes(property.toLowerCase()))
         })
 
         setFilterData(filterResult)
@@ -109,8 +109,8 @@ const Property = () => {
                     <div className='lg:border-r-2 border-r-[0] pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>Price</p>
                         <select onClick={handlePrice} className='border-0 font-bold' >
-                            <option>500-2500</option>
-                            <option>2600-4500</option>
+                            <option>$500-$2500</option>
+                            <option>$2600-$4500</option>
                         </select>
                     </div>
                     <div className=' lg:border-r-2 border-r-[0] pl-7 border-[#d0b9f3] pr-2'>
@@ -121,7 +121,7 @@ const Property = () => {
                         </select>
                     </div>
                     <div className=' pl-7 pr-7 flex justify-end'>
-                        <button onClick={() => handleSearch(property, price, destination)} className='btn btn-primary'>Search</button>
+                        <button onClick={() => handleSearch(property, price, destination)} className='bg-[#7b5cf8] text-white px-5  rounded-md'>Search</button>
                     </div>
                 </div>
             </div>
