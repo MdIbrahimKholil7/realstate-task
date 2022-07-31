@@ -120,8 +120,8 @@ const Property = () => {
                             <option>Flat</option>
                         </select>
                     </div>
-                    <div className=' pl-7 pr-7 flex justify-end'>
-                        <button onClick={() => handleSearch(property, price, destination)} className='bg-[#7b5cf8] text-white px-5  rounded-md'>Search</button>
+                    <div className=' pl-7 pr-7 flex md:justify-end justify-center mt-9 md:mt-0'>
+                        <button onClick={() => handleSearch(property, price, destination)} className='bg-[#7b5cf8] py-3 text-white px-5  rounded-md'>Search</button>
                     </div>
                 </div>
             </div>
