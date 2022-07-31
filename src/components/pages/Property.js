@@ -19,6 +19,7 @@ const Property = () => {
             key: "selection",
         }
     ])
+    // fetching data from data.json file 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
