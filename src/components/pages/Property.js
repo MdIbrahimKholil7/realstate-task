@@ -59,8 +59,8 @@ const Property = () => {
     return (
         <div className='mt-10'>
 
-            <div className='flex justify-between items-center'>
-                <h1 className='text-4xl font-bold'>Search properties to rent</h1>
+            <div className='flex md:justify-between flex-col md:flex-row items-center'>
+                <h1 className='lg:text-4xl md:text-2xl sm:text-xl text-[18px] font-bold md:mb-0 mb-5'>Search properties to rent</h1>
                 <div>
                     <select class="border-[#d0b9f3] border-solid border-2 select">
                         <option disabled selected>Who shot first?</option>
@@ -69,8 +69,8 @@ const Property = () => {
             </div>
 
             <div>
-                <div className='grid grid-cols-5 shadow-2xl py-7 mt-10 rounded-md'>
-                    <div className='border-r-2 px-7   border-[#d0b9f3] pr-2'>
+                <div className='grid lg:grid-cols-5 grid-cols-1 shadow-2xl py-7 mt-10 rounded-md'>
+                    <div className='lg:border-r-2 border-r-[0] px-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>Location</p>
                         <select onClick={handleDestination} className='border-0 font-bold' >
                             <option selected className='outline-none border-0'>New York,USA</option>
@@ -79,7 +79,7 @@ const Property = () => {
                             <option className='outline-none border-0'>Miami,USA</option>
                         </select>
                     </div>
-                    <div className='border-r-2 pl-7 border-[#d0b9f3] pr-2'>
+                    <div className='lg:border-r-2 border-r-[0] pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>When</p>
                         <div onClick={handleDate} className='flex justify-between items-center cursor-pointer relative'>
                             <p className='text-[#131212] font-bold'>Select Move-In Date</p>
@@ -105,14 +105,14 @@ const Property = () => {
                            }
                         </div>
                     </div>
-                    <div className='border-r-2 pl-7 border-[#d0b9f3] pr-2'>
+                    <div className='lg:border-r-2 border-r-[0] pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>Price</p>
                         <select onClick={handlePrice} className='border-0 font-bold' >
                             <option>500-2500</option>
                             <option>2600-4500</option>
                         </select>
                     </div>
-                    <div className=' border-r-2 pl-7 border-[#d0b9f3] pr-2'>
+                    <div className=' lg:border-r-2 border-r-[0] pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>Property Type</p>
                         <select onClick={handleProperty} className='border-0 font-bold'>
                             <option>Houses</option>
@@ -126,7 +126,7 @@ const Property = () => {
             </div>
 
             <div className='my-40'>
-                <div className='grid grid-cols-3 gap-9'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9'>
                     {
                         filterData?.map((element, index) => <PropertyDetailsCard
                             key={index}

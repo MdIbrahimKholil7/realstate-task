@@ -2,10 +2,12 @@ import React, { Suspense } from 'react'
 import './App.css';
 // import Home from './components/home/Home';
 import loader from './assets/images/829.gif'
+import Header from './components/header/Header';
 const Home = React.lazy(() => import('./components/home/Home.js'));
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Suspense
         fallback={<div
           className='flex justify-center items-center

@@ -560,5 +560,38 @@
         "address":"909Woodland St,Michigan,IN",
         "squareFeet":"9✖6.4m²",
         "img":"https://i.ibb.co/Svq33rn/images.jpg"
+    },
+    {
+        "propertyName":"Sea to Sky",
+        "propertyType":"Flat",
+        "price":"3700",
+        "beds":"5",
+        "bathrooms":"3",
+        "location":"New York,USA",
+        "address":"909Woodland St,Michigan,IN",
+        "squareFeet":"9✖6.4m²",
+        "img":"https://i.ibb.co/Svq33rn/images.jpg"
+    },
+    {
+        "propertyName":"Sea to Sky",
+        "propertyType":"Flat",
+        "price":"3200",
+        "beds":"5",
+        "bathrooms":"3",
+        "location":"New York,USA",
+        "address":"909Woodland St,Michigan,IN",
+        "squareFeet":"9✖6.4m²",
+        "img":"https://i.ibb.co/Svq33rn/images.jpg"
+    },
+    {
+        "propertyName":"Sea to Sky",
+        "propertyType":"Houses",
+        "price":"1700",
+        "beds":"5",
+        "bathrooms":"3",
+        "location":"Florida,USA",
+        "address":"909Woodland St,Michigan,IN",
+        "squareFeet":"9✖6.4m²",
+        "img":"https://i.ibb.co/Svq33rn/images.jpg"
     }
 ]
