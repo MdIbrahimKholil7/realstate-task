@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import PropertyDetails from './PropertyDetails';
 import PropertyDetailsCard from './PropertyDetailsCard';
-
+import { DateRange } from 'react-date-range';
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import { MdDateRange } from 'react-icons/md';
 const Property = () => {
 
-    const [destination, setDestination] = useState('')
-    const [price, setPrice] = useState(0)
-    const [property, setProperty] = useState('')
+    const [destination, setDestination] = useState('New York,USA')
+    const [price, setPrice] = useState('500-2500')
+    const [property, setProperty] = useState('Houses')
     const [data, setData] = useState([])
     const [filterData, setFilterData] = useState([])
-
+    const [openDate, setOpenDate] = useState(false)
+    const [date, setDate] = useState([
+        {
+            startDate: new Date(),
+            endDate: new Date(),
+            key: "selection",
+        }
+    ])
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -20,16 +29,17 @@ const Property = () => {
 
     }, [])
 
+    // filter data 
     const handleSearch = (property, price, destination) => {
+
         const number = price.split('-')
-        console.log(property)
-        console.log(typeof Number(number[0]))
+        // filter data by condition 
         const filterResult = data.filter(element => {
             return element.location.includes(destination) && element.price >= Number(number[0]) && element.price <= Number(number[1]) && element.propertyType.toLowerCase().includes(property.toLowerCase())
 
         })
 
-       setFilterData(filterResult)
+        setFilterData(filterResult)
     }
 
     const handleDestination = event => {
@@ -41,8 +51,11 @@ const Property = () => {
     const handleProperty = event => {
         setProperty(event.target.value)
     }
-console.log(filterData)
 
+    const handleDate = () => {
+        setOpenDate(!openDate)
+    }
+    console.log(date)
     return (
         <div className='mt-10'>
 
@@ -68,7 +81,29 @@ console.log(filterData)
                     </div>
                     <div className='border-r-2 pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>When</p>
+                        <div onClick={handleDate} className='flex justify-between items-center cursor-pointer relative'>
+                            <p className='text-[#131212] font-bold'>Select Move-In Date</p>
+                            <span>
+                                <MdDateRange
+                                    className='text-[#a09ff0] text-2xl'
 
+                                />
+                            </span>
+                           {
+                            openDate &&  <div
+                            className='absolute top-[52px] left-0 z-10'
+                            >
+                            <DateRange
+                                editableDateInputs={true}
+                                onChange={(item) => setDate([item.selection])}
+                                moveRangeOnFirstSelection={false}
+                                ranges={date}
+                                minDate={new Date()}
+                              
+                            />
+                        </div>
+                           }
+                        </div>
                     </div>
                     <div className='border-r-2 pl-7 border-[#d0b9f3] pr-2'>
                         <p className='text-[#bcb8b8] pb-2'>Price</p>
@@ -84,13 +119,13 @@ console.log(filterData)
                             <option>Flat</option>
                         </select>
                     </div>
-                    <div className=' pl-7 pr-2'>
+                    <div className=' pl-7 pr-7 flex justify-end'>
                         <button onClick={() => handleSearch(property, price, destination)} className='btn btn-primary'>Search</button>
                     </div>
                 </div>
             </div>
 
-            <div className='mt-40'>
+            <div className='my-40'>
                 <div className='grid grid-cols-3 gap-9'>
                     {
                         filterData?.map((element, index) => <PropertyDetailsCard
